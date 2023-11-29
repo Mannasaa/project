@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break Out of Iframe</title>
+</head>
+<body>
+    <h1>Parent Page</h1>
+    
+    
+    <iframe src="iframe.html" id="myIframe" width="400" height="300"></iframe>
+
+    <button onclick="breakOut()">Break Out of Iframe</button>
+
+    <script>
+        function breakOut() {
+            
+            var iframe = document.getElementById('myIframe');
+            if (iframe) {
+    
+                window.top.location.href = iframe.src;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+function countCharacterOccurrences(inputString) {
+  const charCount = {};
+
+  for (const char of inputString) {
+    if (charCount[char]) {
+      charCount[char]++;
+    } else {
+      charCount[char] = 1;
+    }
+  }
+
+  return charCount;
+}
+
+
+const testString = "Hello, World!";
+const characterCounts = countCharacterOccurrences(testString);
+
+document.write("Character occurrences in the string:");
+for (const char in characterCounts) {
+  document.write(`'${char}' occurs ${characterCounts[char]} times.`);
+}
+
+
+    </script>
+    
+</body>
+</html>

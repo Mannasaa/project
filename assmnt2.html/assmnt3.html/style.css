@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:linear-gradient(rgb(144, 144, 178),rgb(201, 153, 161));
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    background-color: aliceblue;
+    width:300px;
+    padding:15px;
+    display:grid;
+    justify-content:center;
+    
+}
+
+input{
+    padding:30px;
+    font-size: 20px;
+    background-color: rgb(202, 31, 31);
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:rgb(149, 63, 63);
+    box-shadow:5px 5px 5px red;
+}
+

@@ -1,0 +1,42 @@
+body{
+    background: linear-gradient(rgb(201, 81, 101),rgb(217, 0, 255));
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+
+   
+
+}
+input[type="submit"]{
+    background-color: rgb(158, 158, 229);
+    width:100px;
+    padding:5px;
+    border-radius: 5px;
+
+}
+button.Register{
+    width:360px;
+    padding:5px;
+    
+}
+input[type="radio"]{
+    accent-color:green;
+    margin-bottom: 14px;
+
+}
+input,select{
+    color: grey;
+    border:1px solid whitesmoke;
+    padding:5px;
+    border-radius: 5px;
+    background-color: rgb(252, 248, 248);
+
+
+}
+
+input.email{
+    color:aqua;
+    background-color:black;
+}

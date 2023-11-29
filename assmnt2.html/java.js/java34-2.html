@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+const start = parseInt(prompt("Enter the start value:"));
+const end = parseInt(prompt("Enter the end value:"));
+
+
+if (isNaN(start) || isNaN(end)) {
+  console.log("Please enter valid numbers for the start and end values.");
+} else if (start > end) {
+  console.log("Start value should be less than or equal to the end value.");
+} else {
+
+  console.log("Even numbers within the specified range:");
+
+  for (let i = start; i <= end; i++) {
+    if (i % 2 === 0) {
+      console.log(i);
+    }
+  }
+}
+
+    </script>
+</body>
+</html>

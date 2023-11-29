@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    
+        <button id="btnm" onclick="hide()">Register</button>
+    <section>
+          
+        
+        <div id="signup_page" onclick="display1()">
+            
+            <form action="">
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" placeholder="First Name"><br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" placeholder="Last Name"><br>
+                <label for="mobile">Mobile Number</label><br>
+                <input type="tel" id="mobile" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="enter 10-digit mobile number" placeholder="Mobile number"><br>
+                <label for="email">Email</label><br>
+                <input type="email" required title="Enter a valid email id"><br>
+                <label for="pwd">Create a new password</label><br>
+                <input type="password" required pattern="[A-z]{1}[@,#,$,!,]{1}[1-9]{0-3}[a-z]{1-10}"><br>
+                <label for="pwd">Re-enter password</label><br>
+                <input type="password" required ><br>
+                <button id="acc">Sign up</button>
+                
+            </form>
+        </div>
+
+        <button id="btn1" onclick="display1()" onclick="hide()">Sign up</button><br>
+        
+        <div id="login_page" onclick="display()">
+            <form action="">
+                <label for="user_name"></label><br>
+                <input type="text" id="user_name" placeholder="email or mobile number" autocomplete="off"><br>
+                <input type="password" title="enter a valid password" autocomplete="off"><br>
+                <button>Login</button>
+                
+            </form>
+        </div>
+        <button id='btn' onclick="display()" onclick="hide()">Login</button>
+    </section>
+    <script type="text/javascript" src="./loggin.js"></script>
+
+   
+   
+</body>
+</html>
+    

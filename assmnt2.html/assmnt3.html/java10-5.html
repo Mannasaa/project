@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function areAllElementsEven(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+      
+      return false;
+    }
+  }
+  
+  
+  return true;
+}
+
+
+const evenArray = [2, 4, 6, 8, 10];
+const oddArray = [1, 3, 5, 7, 9];
+
+document.write("Is every element in evenArray even?", areAllElementsEven(evenArray));
+document.write("Is every element in oddArray even?", areAllElementsEven(oddArray));
+
+    </script>
+</body>
+</html>

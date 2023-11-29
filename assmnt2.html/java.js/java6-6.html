@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+const myString = "Hello, World!";
+
+
+let letterCount = 0;
+
+
+for (let i = 0; i < myString.length; i++) {
+  const character = myString[i];
+  
+  
+  if (/[A-Za-z]/.test(character)) {
+    letterCount++;
+  }
+}
+
+document.write(`The number of letters in the string is: ${letterCount}`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+function isPentagon(angles) {
+  
+  const sumOfAngles = angles.reduce((acc, angle) => acc + angle, 0);
+  
+  
+  if (sumOfAngles === 540) {
+    return "These angles can form a pentagon.";
+  } else {
+    return "These angles cannot form a pentagon.";
+  }
+}
+const angleCount = 5; 
+const angles = [];
+
+for (let i = 1; i <= angleCount; i++) {
+  const angle = parseFloat(prompt(`Enter angle ${i}:`));
+  angles.push(angle);
+}
+const result = isPentagon(angles);
+document.write(result);
+
+    </script>
+</body>
+</html>

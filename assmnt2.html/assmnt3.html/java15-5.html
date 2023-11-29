@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+function addElementsToArray(array, number) {
+  
+  if (number % 2 !== 0 && number % 10 !== 0) {
+    
+    array.push(number);
+  }
+}
+
+
+var myArray = [];
+
+
+var numbersToAdd = [5, 10, 15, 20, 25, 30];
+
+
+numbersToAdd.forEach(function(number) {
+  addElementsToArray(myArray, number);
+});
+
+document.write(myArray);
+
+    </script>
+</body>
+</html>

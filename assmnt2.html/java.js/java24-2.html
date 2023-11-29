@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    
+const grossSalary = parseFloat(prompt("Enter the gross salary:"));
+const taxRate = 0.2; 
+
+
+const taxAmount = grossSalary * taxRate;
+const netSalary = grossSalary - taxAmount;
+document.write(`Gross Salary: $${grossSalary}`);
+document.write(`Tax Amount (20%): $${taxAmount}`);
+document.write(`Net Salary: $${netSalary}`);
+
+   </script> 
+</body>
+</html>

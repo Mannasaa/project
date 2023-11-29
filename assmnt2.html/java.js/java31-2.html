@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+function isTriangle(angle1, angle2, angle3) {
+  
+  const sumOfAngles = angle1 + angle2 + angle3;
+  
+  
+  if (sumOfAngles == 180) {
+    return "These angles form a triangle.";
+  } else {
+    return "These angles do not form a triangle.";
+  }
+}
+
+
+const angle1 = parseFloat(prompt("Enter the first angle:"));
+const angle2 = parseFloat(prompt("Enter the second angle:"));
+const angle3 = parseFloat(prompt("Enter the third angle:"));
+
+
+const result = isTriangle(angle1, angle2, angle3);
+document.write(result);
+
+    </script>
+    
+</body>
+</html>

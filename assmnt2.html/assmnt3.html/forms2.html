@@ -1,0 +1,115 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Form</title>
+    <style>
+        body{
+            background: linear-gradient(rgb(201, 81, 101),rgb(217, 0, 255));
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        section{
+            background-color: white;
+            height:400px;
+            width:400px;
+            padding: 20px;
+            border-radius: 10px;
+            margin:20px;
+
+           
+        }
+        div.reg{
+            display:flex;
+            color:grey;
+            /* margin: 20px; */
+            /* padding:20px; */
+        }
+        input[type="submit"]{
+            background-color: rgb(158, 158, 229);
+            width:100px;
+            padding:5px;
+            border-radius: 5px;
+
+        }
+        select{
+            width:360px;
+            padding:5px;
+
+        }
+        h1{
+            color:grey
+            
+        }
+        input[type="radio"]{
+            accent-color:green;
+            margin-bottom: 14px;
+
+        }
+        input,select{
+            color: grey;
+            border:1px solid whitesmoke;
+            padding:5px;
+            border-radius: 5px;
+            background-color: rgb(252, 248, 248);
+        }
+    </style>
+</head>
+<body>
+    <section> 
+    <h1>Registration Form</h1>
+    
+        
+   
+    <form action="">
+        <div class="reg">
+            <div>
+        <!-- Text Input -->
+        <label for="First name">First Name:</label>
+        <input type="text" id="fname" name="name" required placeholder="Johnny"><br><br>
+
+        
+
+        <label for="Birthday">Birthday:</label><br>
+        <input type="date" id="Birthday" name="name" required ><br><br>
+
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+    </div>
+    <div>
+
+        <label for="Last name">Last Name:</label>
+        <input type="text" id="last name" name="name" required placeholder="Nelson"><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+
+        
+        <label for="Phone Number">Phone Number</label>
+        <input type="tel" id="phone number" name="phone number" ><br>
+
+
+    </div>
+</div>
+
+    <label for="Subject">Subject:</label><br>
+    <select name="ddl" id="">
+        <option value="Choose an option">Choose an option</option>
+        <option value="maths">maths</option>
+        <option value="science">science</option>
+    </select><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+        
+    </form>
+</section>
+</body>
+</html>

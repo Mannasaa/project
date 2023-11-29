@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+const myString = "Hello, World!";
+
+
+function isConsonant(char) {
+  return /[a-zA-Z]/.test(char) && !/[aeiouAEIOU]/.test(char);
+}
+
+
+let consonantCount = 0;
+
+
+for (const char of myString) {
+  if (isConsonant(char)) {
+    consonantCount++;
+  }
+}
+
+
+document.write(`The number of consonant characters in the string is: ${consonantCount}`);
+
+    </script>
+    
+</body>
+</html>

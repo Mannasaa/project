@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Form</title>
+    <style>
+        body{
+            background: blue(rgb(201, 81, 101),rgb(217, 0, 255));
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        section{
+            background-color: white;
+            height:400px;
+            width:400px;
+            padding: 20px;
+            margin:20px;
+
+           
+        }
+        div.reg{
+            display:flex;
+            color:grey;
+            /* margin: 20px; */
+            /* padding:20px; */
+        }
+        input[type="submit"]{
+            background-color: rgb(158, 158, 229);
+            width:100px;
+            padding:5px;
+            border-radius: 5px;
+
+        }
+        select{
+            width:360px;
+            padding:5px;
+
+        }
+        h1{
+            color:grey
+            
+        
+    
+
+        }
+        input,select{
+            color: grey;
+            border:1px solid whitesmoke;
+            padding:5px;
+            border-radius: 5px;
+            background-color: rgb(252, 248, 248);
+        }
+    </style>
+</head>
+<body>
+    <section> 
+    <h1>Task List 2021</h1>
+    
+        
+   
+    <form action="">
+        <div class="reg">
+            <div>
+        <!-- Text Input -->
+        <label for="Enter the text">Enter the text:</label>
+        <input type="Insert the text" id="" name="name" required placeholder="insert"><br><br>
+
+
+        <label for="Text">Text:</label>
+        <input type="text" id="" name="name" required placeholder="insert the text"><br><br>
+
+    
+
+
+
+
+    </div>
+    <div>
+
+        <label for="Text">Text:</label>
+        <input type="text" id="" name="name" required placeholder="insert and delete"><br><br>
+
+    
+
+
+    </div>
+</div>
+
+    
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+        
+    </form>
+    <div class="Task list"></div>
+</section>
+<script>
+    let input= document.queryselector("input")
+    let btn= document.queryselector("button")
+    let task= document.getElementById("tasklist")
+    
+    btn.onclick=function(){
+
+        if(input.value.length===0){
+            alert('enter some value ')
+        }
+        else{
+             tasks.innerHTML += `<div class='task'>${input.value}
+        }
+    }
+</script>
+</body>
+</html>

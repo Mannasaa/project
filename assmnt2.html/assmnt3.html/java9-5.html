@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findMiddleElement(arr) {
+  const middleIndex = Math.floor(arr.length / 2);
+
+  if (arr.length % 2 === 1) {
+    
+    return arr[middleIndex];
+  } else {
+    
+    const middleElement1 = arr[middleIndex - 1];
+    const middleElement2 = arr[middleIndex];
+    return [middleElement1, middleElement2];
+  }
+}
+const oddArray = [1, 2, 3, 4, 5];
+const evenArray = [1, 2, 3, 4, 5, 6];
+
+const middleOdd = findMiddleElement(oddArray);
+const middleEven = findMiddleElement(evenArray);
+
+document.write("Middle element of odd array:", middleOdd);
+document.write("Middle elements of even array:", middleEven);
+
+    </script>
+</body>
+</html>

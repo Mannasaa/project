@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+</head>
+<body>
+
+  <h1>JavaScript Quiz</h1>
+  <div id="quiz"></div>
+  <button onclick="submitQuiz()">Submit Quiz</button>
+  <div id="results"></div>
+
+  <script>
+    const quizQuestions = [
+      {
+        question: "What is the capital of France?",
+        choices: ["London", "Berlin", "Paris", "Madrid"],
+        correctAnswer: "Paris"
+      },
+      {
+        question: "What is 2 + 2?",
+        choices: ["3", "4", "5", "6"],
+        correctAnswer: "4"
+      },
+      {
+        question: "Which is the largest planet in our solar system?",
+        choices: ["Earth", "Jupiter", "Mars", "Saturn"],
+        correctAnswer: "Jupiter"
+      },
+      {
+        question: "What is te capital of telangana?",
+        choices : ["Hyderabad", "secunderabad", "nellore", "kakinada"],
+        correctAnswer: "Hyderabad"
+      },
+      {
+        question:"What is 5 - 2?",
+        choices : ["1", "2", "5", "3"],
+        correctAnswer: "3"
+      },
+      {
+        question:"What is the full form of fs?",
+        choices : ["fullstack", "fullstore", "stackover", "override"],
+        correctAnswer:  "fullstack" 
+      }
+    ];
+
+    const quizContainer = document.getElementById('quiz');
+    const resultsContainer = document.getElementById('results');
+
+    function displayQuiz() {
+      let quizContent = '';
+
+      quizQuestions.forEach((question, index) => {
+        quizContent += `<div class="question">${index + 1}. ${question.question}</div>`;
+        question.choices.forEach(choice => {
+          quizContent += `<input type="radio" name="question${index}" value="${choice}">
+                          <label>${choice}</label><br>`;
+        });
+      });
+
+      quizContainer.innerHTML = quizContent;
+    }
+
+    function submitQuiz() {
+      let score = 0;
+
+      quizQuestions.forEach((question, index) => {
+        const answer = document.querySelector(`input[name=question${index}]:checked`).value;
+        if (answer === question.correctAnswer) {
+          score++;
+        }
+      });
+
+      resultsContainer.innerHTML = `You scored ${score} out of ${quizQuestions.length}`;
+    }
+
+    displayQuiz();
+  </script>
+</body>
+</html>
